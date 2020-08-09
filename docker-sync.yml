@@ -1,0 +1,5 @@
+version: '2'
+syncs:
+  gohit-sync:
+    src: '.'
+    sync_strategy: 'unison'
