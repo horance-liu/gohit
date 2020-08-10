@@ -4,18 +4,14 @@ import (
 	"log"
 	"os"
 
-	_ "github.com/horance-liu/gohit/matchers"
+	_ "github.com/horance-liu/gohit/matcher"
 	"github.com/horance-liu/gohit/search"
 )
 
-// init is called prior to main.
 func init() {
-	// Change the device for logging to stdout.
 	log.SetOutput(os.Stdout)
 }
 
-// main is the entry point for the program.
 func main() {
-	// Perform the search for the specified term.
 	search.Run("president")
 }
